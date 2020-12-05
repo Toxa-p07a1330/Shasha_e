@@ -14,13 +14,20 @@ class Sellers extends React.Component{
                         console.log(context)
                         return <div>
                             {context.data.Seller.map((value)=>{
-
-                                return <div style={{display: "block", padding: "2%"}}>
-                                    <div>Фамилия:{value.fName}</div>
-                                    <div>Имя;{value.sName}</div>
-                                    <div>Отчетсво:{value.tName}</div>
-                                    <div>Телефон:{value.phone}</div>
+                                return<div style={{display: "inline-block", padding: "2%", border: "1px solid white",
+                                width:"20%"}}>
+                                    <div >
+                                        <img style={{width:"80%", float: "left"}} src={value.photo} alt={""}/>
+                                    </div>
+                                    <br/>
+                                        <div>
+                                            <div>Фамилия:{value.fName}</div>
+                                            <div>Имя;{value.sName}</div>
+                                            <div>Отчетсво:{value.tName}</div>
+                                            <div>Телефон:{value.phone}</div>
+                                        </div>
                                 </div>
+
                             })}
                         </div>
                     }}

@@ -7,6 +7,7 @@ import SellMagazine from "./SellMagazine";
 import Reports from "./Reports";
 import Home from "./Home";
 import Admin from "./Admin";
+import WasteReport from "./WasteReport";
 
 class Content extends React.Component{
 
@@ -20,6 +21,7 @@ class Content extends React.Component{
                     <Route path={"/sellers"} component={Sellers}/>
                     <Route path={"/sellMagazine"} component={SellMagazine}/>
                     <Route path={"/reports"} component={Reports}/>
+                    <Route path={"/waste_reports"} component={WasteReport}/>
                     <Route path={"/admin"} component={Admin}/>
                     <Route exact path={"/"} component={Home}/>
                 </Switch>

@@ -12,7 +12,7 @@ class Items extends React.Component{
                     {(context)=>{
                         return <div style={{display: "inline-block"}}>
                             {context.data.Items.map((value)=>{
-                                return <div style={{padding: "2%", display: "block"}}>
+                                return <div style={{padding: "2%", display: "block",  border: "1px solid white"}}>
                                     <div>Название:{value.name}</div>
                                     <div>Цена:{value.price}</div>
                                     <div>Количество в наличии: {value.amount}</div>
