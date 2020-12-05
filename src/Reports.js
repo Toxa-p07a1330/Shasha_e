@@ -17,7 +17,7 @@ class Reports extends React.Component{
                                     let itemId = context.data.Items.filter((o)=>{return o.id === val.itemId})[0];
                                     return <div style={{display: "inline-block", padding: "2%"}}>
                                         <div>Дата: {val.date}</div>
-                                        <div>Продавец: {sellerId.tName}</div>
+                                        <div>Продавец: {sellerId.sName}</div>
                                         <div>Товар: {itemId.name}</div>
                                         <div>Начальное количество:{val.startCount}</div>
                                         <div>Проданное количество: {val.soldCount}</div>
