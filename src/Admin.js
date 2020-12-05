@@ -1,11 +1,12 @@
 import React from 'react'
 let Admin = ()=>{
     let style = {
-        display: "inline-block",
+        display: "block",
         width: "80%",
         padding: "2%",
         marginLeft: "10%",
-        textAlign: "center"
+        textAlign: "center",
+        paddingTop:"-30%"
     }
     const password = "pass";
     let putResponse = ()=>{

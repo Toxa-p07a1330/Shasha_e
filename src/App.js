@@ -7,13 +7,13 @@ class App extends React.Component{
     constructor() {
         super();
         this.state  ={
-            IncomeReport: false,
+            IncomeReport: null,
             Items: null,
             ProfitReport: null,
             SellMagazine: null,
             Seller: null,
             WasteReport: null,
-
+            isLoaded: false
         }
 
 
@@ -27,17 +27,21 @@ class App extends React.Component{
                         let tables = ["IncomeReport", "Items", "ProfitReport","SellMagazine", "Seller", "WasteReport"]
                         for (let i of tables)
                         {
-                            if (this.state[i] === null){
+                            if (this.state[i] == null){
                                 fetch(basicString+"select * from "+i).then(
                                     (resolve)=>{
                                         resolve.json().then(
                                             (json)=>{
                                                 let newState = this.state;
                                                 newState[i] = json;
+                                                console.log(i)
                                                 console.log(json)
-                                                newState.isLoaded = (newState.films !== null) && (newState.hall !== null) &&
-                                                    (newState.places !== null) && (newState.price !== null) && (newState.ticket !== null) &&
-                                                    (newState.schedule !== null);
+                                                let keys = [];
+                                                for (let i in this.state)
+                                                    keys.push(this.state[i]);
+                                                console.log(keys)
+                                                console.log("arrr")
+                                                newState.isLoaded = (keys.filter((o)=>{ return o === null}).length === 0)
                                                 this.setState(newState);
 
                                             }, reason => {

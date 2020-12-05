@@ -19,8 +19,8 @@ class Menu extends React.Component{
                         let styleLink = {
                             border: "1px solid white",
                             padding:"1%",
-                            color:"black",
-                            backgroundColor: "#87CEEB",
+                            color:"darkred",
+                            backgroundColor: "grey",
                             width: "100%    ",
                             display: "block"
                         }
@@ -29,11 +29,10 @@ class Menu extends React.Component{
                                 <a href={"/"} style={styleLink}>Домашняя страница</a><br/>
                                 <a href={"/sellers"} style={styleLink}>Продавцы</a><br/>
                                 <a href={"/items"} style={styleLink}>Товары</a><br/>
-                                <a href={"/sellMagazin"} style={styleLink}>Журнал продаж</a><br/>
+                                <a href={"/sellMagazine"} style={styleLink}>Журнал продаж</a><br/>
                                 <a href={"/reports"} style={styleLink}>Отчеты</a><br/>
                                 <a href={"/admin"} style={styleLink}>Панель админимстратора</a><br/>
-                                <a href={"/places"} style={styleLink}>Места</a><br/>
-                                <a href={"/admin"} style={styleLink}>Панель администратора</a><br/>
+
                             </div>)
                     }}
                 </MyContext.Consumer>
