@@ -19,8 +19,8 @@ class Menu extends React.Component{
                         let styleLink = {
                             border: "1px solid white",
                             padding:"1%",
-                            color:"white",
-                            backgroundColor: "grey",
+                            color:"lightgreen",
+                            backgroundColor: "#4B5320",
                             width: "100%    ",
                             display: "block"
                         }

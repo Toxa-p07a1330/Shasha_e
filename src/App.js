@@ -19,7 +19,7 @@ class App extends React.Component{
 
     }
     render() {
-        return (<div style={{backgroundColor: "#151719", color: "#c1caca", minHeight: "100vh"}}>
+        return (<div style={{backgroundColor: "#78866b", color: "#c1caca", minHeight: "100vh"}}>
                 {(()=>{
                     if (!this.state.isLoaded)
                     {
@@ -62,6 +62,7 @@ class App extends React.Component{
                             <MyContext.Consumer>
                                 {(context)=>{
                                     context.setData(this.state)
+                                    console.log(context)
                                     return (
                                         <div>
                                             <Header/>

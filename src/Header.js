@@ -4,11 +4,11 @@ render() {
     let style = {
         height: "10vh",
         width:"100vw",
-        backgroundColor: "grey",
+        backgroundColor: "DarkGreen",
         display: "inline-block"
     }
 return <div style={style}>
-    <h1 style={{color:"darkgrey", paddingLeft:"3%"}}>Название_музыкального_магазина</h1>
+    <h1 style={{color:"lightgreen", paddingLeft:"3%"}}>Название_магазина_одежды</h1>
 </div>
 }
 }
